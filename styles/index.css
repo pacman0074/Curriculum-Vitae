@@ -25,23 +25,25 @@ section
 }
 
 @font-face {
-    font-family: "HelloSoffie-z8e13";
-    src: url("../font/HelloSoffie-z8e13.ttf");
+    font-family: "KgHolocene";
+    src: url("../font/KgHoloceneRegular-lgjKy.ttf");
     
+}
+
+html
+{
+    scroll-behavior: smooth;
 }
 
 body 
 {
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     /*background-color: #f7f7f7;*/
     background-image: url("../images/background-body-5-bis.png");
     background-attachment:fixed;
-    background-position: right;
     background-size:cover;
-    background-clip: border-box;
-    scroll-behavior: smooth;
-    
 }
+
 
 header
 {
@@ -53,18 +55,26 @@ header
    
 }
 
+
+#initiale
+{
+    font-size:x-large;
+    font-family: "KgHolocene";
+}
+
 .nav-link 
 {
     color: black;
     font-size:medium;
 }
 
-.nav-link:hover
+/*.nav-link:hover
 {
-    border-bottom :1px solid blue;
-}
+    border-bottom :1px solid rgb(13, 110, 253);
+    border-radius: 0%;
+}*/
 
-#Présentation 
+#Accueil 
 {
     justify-content: space-around;
     align-items: center;
@@ -72,28 +82,42 @@ header
     /*mt-5 justify-content-around align-items-center*/
 }
 
-#Présentation h1,h2
+#Accueil h1,h2
 {
     position: relative;
     left : 80px;
 }
 
-h1 span 
+h1 span
 {
     font-family:"AlexBrush-Regular";
-    font-size:larger;
+    font-size:2em;
+}
+h1 span > span
+{
+    font-family:"AlexBrush-Regular";
+    font-size:1em;
+    color: rgb(13, 110, 253);
 }
 
-#Présentation figure 
+#Accueil figure 
 {   /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0.5em 0.5em 0.5em gainsboro;
     position :relative;
     top: 40px;
     left: 80px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 section{
     margin-top: 7em;
+}
+
+.title-section span 
+{
+    font-family:"AlexBrush-Regular";
+    color: rgb(13, 110, 253);
 }
 
 .title-section
@@ -110,7 +134,7 @@ section{
     height: 2em;
 }
 
-#Compétences h4
+#Competences h4
 {
     text-align: center;
     margin-bottom: 1.5em;

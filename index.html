@@ -10,39 +10,48 @@
         <title>Curriculum portfolio</title>
     </head>
     <body>
-        <header class="container-fluid shadow mb-5 p-4" >
+        <header class="container-fluid d-flex justify-content-between shadow mb-5 p-4  " >
+            <div id="initiale"><span class="bg-primary bg-gradient p-1 rounded-3 text-light">Yannis</span> AYOUAZ</div>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                  <a class="nav-link" href="#Présentation">Accueil</a>
-                </li>
-                <li class="nav-item active">
-                  <a class="nav-link" href="#Expérience">Expériences</a>
+                  <a class="nav-link" href="#Accueil">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Formations">Formations</a>
+                  <a class="nav-link" href="#Experience">Expériences</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#Compétences">Compétences</a>
+                  <a class="nav-link" href="#Competences">Compétences</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#Langues">Langues</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#Formations">Formations</a>
+                </li>
               </ul>
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="../Curriculum Vitae/download/CV_Yannis_AYOUAZ.pdf">C.V (pdf)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#Contactez-moi">Contactez-moi</a>
+                </li>
+            </ul>
         </header>
         <div class="container-fluid">
-            <section class="row" id="Présentation">
+            <section class="row" id="Accueil">
                 <div class="col-6 text-center">
-                    <h1>Je suis <span>Yannis AYOUAZ, </span> responsable de domaine applicatif</h1><br>
+                    <h1>Je suis <span><span>Y</span>annis <span>A</span>youaz, </span> responsable de domaine applicatif</h1><br>
                     <h2>Bienvenue sur mon portfolio</h2>
                 </div>
                 <div class="col-4">
                     <figure class="h-75 w-75">
-                        <img class="img-fluid" src="./images/IMG_20200203_183614_2.jpg" alt="Photo de présentation"/>
+                        <img class="img-fluid" src="./images/IMG_20200203_183614_2-ConvertImage-removebg-preview.png" alt="Photo de présentation"/>
                     </figure>
                 </div>
             </section>
-            <section class="container-fluid" id="Expérience">
-                <div class="title-section">Expériences</div>
+            <section class="container-fluid" id="Experience">
+                <div class="title-section"><span>E</span>xpériences</div>
                 <div class="main-timeline">
                     <!-- start experience section-->
                     <div class="timeline">
@@ -136,8 +145,8 @@
                  <!-- end experience section-->
                 </div>
             </section>
-            <section class="container-fluid" id="Compétences">
-                <div class="title-section">Compétences</div>
+            <section class="container-fluid" id="Competences">
+                <div class="title-section"><span>C</span>ompétences</div>
                 <div class="row mt-5">
                     <div class="col-4">
                         <h4>Développement</h4>
@@ -241,7 +250,7 @@
                 </div>
             </section>
             <section class="container-fluid" id="Langues">
-                <div class="title-section">Langues</div>
+                <div class="title-section"><span>L</span>angues</div>
                 <div class="row mt-5 justify-content-evenly">
                     <div class="col-2">
                         <div class="card shadow overflow-hidden" style="width: 18rem; height: 27rem;">
@@ -266,23 +275,64 @@
                 </div>
             </section>
                 <section class="container-fluid" id="Formations">
-                    <div class="title-section">Diplômes & Formations</div>
+                    <div class="title-section"><span>D</span>iplômes & <span>F</span>ormations</div>
 
                 </section>
         </div>
-        <script type="text/javascript">
+        <script async type="text/javascript">
            var lastPositionScroll = window.screenY;
 
-           window.addEventListener("scroll", function(event){ 
-            if (event.currentTarget.scrollY >= lastPositionScroll){ 
-                document.getElementsByTagName("header")[0].style.visibility = "hidden";     
-            } else document.getElementsByTagName("header")[0].style.visibility = "visible";
+            window.addEventListener("scroll", function(event){ 
+                //Cacher le header quand scroll down
+                if (event.currentTarget.scrollY >= lastPositionScroll){ 
+                    document.getElementsByTagName("header")[0].style.visibility = "hidden";     
+                } else document.getElementsByTagName("header")[0].style.visibility = "visible";
 
-            lastPositionScroll = event.currentTarget.scrollY;
+                lastPositionScroll = event.currentTarget.scrollY;
+
+                //Activer border bottom sous l'ancre quand on est dans la div référencé dans href
+                var activeNavLink = document.getElementsByClassName("nav-link");
+                var section = document.getElementsByTagName("section");
+                var header = document.getElementsByTagName("header");
+                
+                for(i=0; i < section.length; i++){
+                    if(((window.scrollY > section[i].offsetTop) && (window.scrollY < (section[i].scrollHeight + section[i].offsetTop)))){
+                        console.log("tata  "+section[i].id);
+                        for(j=0; j < activeNavLink.length;j++){
+                            console.log("section =  " +section[i].id);
+                            console.log("activeNavLink    = " +activeNavLink[j].hash);
+                            
+                            if(activeNavLink[j].hash == "#"+section[i].id){
+                                if(j != 0){
+                                    activeNavLink[j].style.borderBottom = "1px solid rgb(13, 110, 253)";
+                                    activeNavLink[j+1].style.borderBottom = "";
+                                    activeNavLink[j-1].style.borderBottom = "";
+                                }
+                            }
+                        }    
+                    }else if( (window.scrollY > header[0].offsetTop) && (window.scrollY < (header[0].scrollHeight + header[0].offsetTop)) ){
+                        activeNavLink[0].style.borderBottom = "1px solid rgb(13, 110, 253)";
+                        activeNavLink[1].style.borderBottom = "";
+                    }
+                }
            });
-           
-            
 
+           //Activer border bottom sous l'ancre sur laquelle l'utiliseteur a cliqué 
+           var activeNavLink = document.getElementsByClassName("nav-link")[0];
+           activeNavLink.style.borderBottom = "1px solid rgb(13, 110, 253)";
+           activeNavLink.style.borderRadius = "0%";
+           var anchor = document.getElementsByTagName("a");
+           for (i=0; i < anchor.length; i++){
+               anchor[i].style.borderRadius = "0%";
+                anchor[i].addEventListener("click", function(event){
+                    activeNavLink.style.borderBottom = "";
+                    event.currentTarget.style.borderBottom = "1px solid rgb(13, 110, 253)";
+                    activeNavLink = event.currentTarget;
+                })
+           }
+        
+
+           
         </script>
     </body>
 </html>
