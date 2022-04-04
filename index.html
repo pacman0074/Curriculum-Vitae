@@ -31,14 +31,14 @@
               </ul>
             <ul class="nav nav-pills">
                 <li class="nav-item">
-                    <a class="nav-link" href="../Curriculum Vitae/download/CV_Yannis_AYOUAZ.pdf">C.V (pdf)</a>
+                    <a class="nav-link" id="telecharger" href="../Curriculum Vitae/download/CV_Yannis_AYOUAZ.pdf">Télécharger mon CV complet</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" href="#Contactez-moi">Contactez-moi</a>
                 </li>
             </ul>
         </header>
-        <div class="container-fluid">
+        <div class="container-fluid" >
             <section class="row" id="Accueil">
                 <div class="col-6 text-center">
                     <h1>Je suis <span><span>Y</span>annis <span>A</span>youaz, </span> responsable de domaine applicatif</h1><br>
@@ -276,9 +276,76 @@
             </section>
                 <section class="container-fluid" id="Formations">
                     <div class="title-section"><span>D</span>iplômes & <span>F</span>ormations</div>
-
+                    <div class="row " style="margin-top: 80px;">
+                        <div class="col-3" id="text-formation-conteneur">
+                            <div class="row">
+                                <div class="col-4" style="height: 75%; border-right: 1px solid black;">
+                                    <h5>2007 - 2010</h5>
+                                    <h5>2010 - 2013</h5>
+                                    <h5>2011 - 2013</h5>
+                                </div>
+                                <div class="col-8">
+                                    <h5 style="position: relative; bottom:10px;">Classe prépatoire
+                                        <p>Classe préparatoire au lycée militaire d’Aix-en-provence,<br> filière MPSI/MP.</p>
+                                    </h5>
+                                    <h5 style="position: relative; bottom:40px;">Diplôme d'ingénieur (ENSICAEN)
+                                        <p>Ecole nationale supérieure d’ingénieur de Caen – Diplome d’ingénieur en informatique</p>
+                                    </h5>
+                                    <h5 style="position: relative; bottom:75px;">Master 2 E-Secure (UNICAEN)
+                                        <p>Université Caen Normandie – Master 2 E-Secure,<br> sécurité des systemes informatiques</p>
+                                    </h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-1" id="barre"></div>
+                        <div class="col-6">
+                            <figure>
+                               <img class="img-thumbnail" src="./images/2102.i605.017_space_illustration.jpg" alt="Image certificat"> 
+                            </figure>
+                        </div>
+                    </div>
+                </section>
+                <section class="container-fluid" id="Contactez-moi">
+                    <div class="title-section"><span>C</span>ontactez-moi</div>
+                    <div class="container">
+                        <h2 class="mb-0">Un projet de création web ?</h2>
+                        <h3 class="fw-light fs-5">Allons en discuter autour d'un café</h3>
+                
+                        <div class="row gy-4 mt-4">
+                          <div class="col-12 col-md-5">
+                            <img src="./images/rm373batch13-081.jpg" alt="Image d'une tasse de café" width="100%" class="rounded-3 shadow">
+                          </div>
+                          <div class="col-12 offset-md-1 col-md-6">
+                
+                            <!-- Formulaire -->
+                            <form class="row">
+                              <div class="col-6 my-2">
+                                <label for="firstname" class="form-label">Prénom</label>
+                                <input name="firstname" type="text" class="form-control" id="firstname">
+                              </div>
+                              <div class="col-6 my-2">
+                                <label for="name" class="form-label">Nom</label>
+                                <input name="name" type="text" class="form-control" id="name">
+                              </div>
+                              <div class="col-12 my-2">
+                                <label for="email" class="form-label">Email address</label>
+                                <input name="email" type="email" class="form-control" id="email">
+                              </div>
+                              <div class="col-12 my-2">
+                                <label for="message" class="form-label">Message</label>
+                                <textarea name="message" class="form-control" id="message" rows="3"></textarea>
+                              </div>
+                              <div class="col-12 my-2">
+                                <button type="submit" class="btn btn-primary w-100">Envoyer</button>
+                              </div>
+                            </form>
+                
+                          </div>
+                        </div>
+                      </div>
                 </section>
         </div>
+        <footer></footer>
         <script async type="text/javascript">
            var lastPositionScroll = window.screenY;
 
@@ -297,11 +364,7 @@
                 
                 for(i=0; i < section.length; i++){
                     if(((window.scrollY > section[i].offsetTop) && (window.scrollY < (section[i].scrollHeight + section[i].offsetTop)))){
-                        console.log("tata  "+section[i].id);
-                        for(j=0; j < activeNavLink.length;j++){
-                            console.log("section =  " +section[i].id);
-                            console.log("activeNavLink    = " +activeNavLink[j].hash);
-                            
+                        for(j=0; j < activeNavLink.length;j++){               
                             if(activeNavLink[j].hash == "#"+section[i].id){
                                 if(j != 0){
                                     activeNavLink[j].style.borderBottom = "1px solid rgb(13, 110, 253)";
