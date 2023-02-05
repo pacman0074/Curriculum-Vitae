@@ -7,12 +7,12 @@
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"/>
         <link rel="stylesheet" href="./styles/index.css" type="text/css"/>
         <link rel="stylesheet" href="./styles/Timeline.css"/>
-        <title>Curriculum portfolio</title>
+        <title>Portfolio</title>
     </head>
     <body>
         <header class="container-fluid d-flex justify-content-between shadow mb-5 p-4 " >
             <div id="initiale"><span class="bg-primary bg-gradient p-1 rounded-3 text-light">Yannis</span> AYOUAZ</div>
-            <ul class="nav nav-pills">
+            <ul class="nav">
                 <li class="nav-item">
                   <a class="nav-link" href="#Accueil">Accueil</a>
                 </li>
@@ -38,7 +38,9 @@
                 </li>
             </ul>
         </header>
-        <div class="container-fluid" >
+        <div class="container-fluid">
+
+            <!-- start accueil section-->
             <section class="row" id="Accueil">
                 <div class="col-6 text-center">
                     <h1>Je suis <span><span>Y</span>annis <span>A</span>youaz, </span> responsable de domaine applicatif</h1><br>
@@ -46,21 +48,23 @@
                 </div>
                 <div class="col-4">
                     <figure class="h-75 w-75">
-                        <img class="img-fluid" src="./images/IMG_20200203_183614_2-ConvertImage-removebg-preview.png" alt="Photo de présentation"/>
+                        <img class="img-fluid" src="./images/Photo_portrait.png" alt="Photo de présentation"/>
                     </figure>
                 </div>
             </section>
+            <!-- end accueil section-->
+
+            <!-- start experience section-->
             <section class="container-fluid" id="Experience">
                 <div class="title-section"><span>E</span>xpériences</div>
                 <div class="main-timeline">
-                    <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon"></div>
                         <div class="date-content">
                             <div class="date-outer">
                                 <span class="date">
-                                        <span class="month">9 mois</span>
-                                <span class="year">2013</span>
+                                    <span class="month">9 mois</span>
+                                    <span class="year">2013</span>
                                 </span>
                             </div>
                         </div>
@@ -68,14 +72,12 @@
                             <h5 class="title">Sopra - Développeur</h5>
                             <p class="description">
                                 Maintenance corrective et évolutive sur l’application de gestion de la rémunération variable des agents commerciaux de La Banque postale.
-                                <br>Développements PL/SQL java et C++, déploiements, chiffrages, rédactions de spécifications techniques, élaborations de cahiers de
+                                <br><br>Développements PL/SQL java et C++, déploiements, chiffrages, rédactions de spécifications techniques, élaborations de cahiers de
                                 recettes.
                                 <br>Optimisation des performances de la base de données et des traitements associés : Indexation, Optimisation du code.
                             </p>
                         </div>
                     </div>
-                    <!-- end experience section-->
-                    <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon"></div>
                         <div class="date-content">
@@ -91,13 +93,11 @@
                             <p class="description">
                                 Gestion de projets métiers : dématérialisation des courriers de communications clients, fusion des sociétés financières.
                                 <br>Gestion de projets techniques : montée de versions Oracle 12c + migration vers la solution EXADATA Oracle, migration web services vers les serveurs AIX IBM.
-                                <br>Rédactions de spécifications fonctionnels, chiffrage, pilotage des équipes de développement, rédaction de la stratégie de recette, pilotage de la mise en production.
-                                <br>Responsable RUN : analyse fonctionnelle et technique d’anomalies, mise en place et recette des correctifs, pilotage du portefeuille des évolutions, qualification de l’incident suivant le SLA.
+                                <br><br>Rédactions de spécifications fonctionnels, chiffrage, pilotage des équipes de développement, rédaction de la stratégie de recette, pilotage de la mise en production.
+                                <br><br>Responsable RUN : analyse fonctionnelle et technique d’anomalies, mise en place et recette des correctifs, pilotage du portefeuille des évolutions, qualification de l’incident suivant le SLA.
                             </p>
                         </div>
                     </div>
-                    <!-- end experience section-->
-                    <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon"></div>
                         <div class="date-content">
@@ -112,17 +112,15 @@
                             <h5 class="title">Coface - Chef de projet AMOA</h5>
                             <p class="description">
                                 Gestion d’un projet : mise en place d’un outil groupe de facturation des assurés.
-                                <br>Organisation d’ateliers métiers pour définir les expressions de besoins du projet, communication en anglais (à l’oral et à l’écrit) l’écrit), rédactions de l’expression de besoins et des spécifications fonctionnelles, rédaction de la stratégie de recette.
+                                <br><br>Organisation d’ateliers métiers pour définir les expressions de besoins du projet, communication en anglais (à l’oral et à l’écrit) l’écrit), rédactions de l’expression de besoins et des spécifications fonctionnelles, rédaction de la stratégie de recette.
                                 <br>Définition de la solution IT à mettre en oeuvre en termes de spécifications, d’implémentation du modèle de données et des services applicatifs associés.
                                 <br>Support pour les utilisateurs sur les nouveaux outils groupes.
-                                <br>Pilotage & coordination des livraisons avec les équipes techniques.
+                                <br><br>Pilotage & coordination des livraisons avec les équipes techniques.
                                 <br>Organisation et pilotage de point de suivis avec les entités métiers dans le cadre du RUN
-                                <br>Migration base de données de l’outil de facturation locale vers l’outil de facturation groupe : spécifications fonctionnelles et techniques, développements PL/SQL.
+                                <br><br>Migration base de données de l’outil de facturation locale vers l’outil de facturation groupe : spécifications fonctionnelles et techniques, développements PL/SQL.
                             </p>
                         </div>
                     </div>
-                    <!-- end experience section-->
-                    <!-- start experience section-->
                     <div class="timeline">
                         <div class="icon"></div>
                         <div class="date-content">
@@ -136,15 +134,32 @@
                         <div class="timeline-content">
                             <h5 class="title">Neuflize OBC - Responsable de domaine applicatif</h5>
                             <p class="description">
-                                Responsable d'applications dans le domaine clients : maintenance, évolution, support utilisateurs.
-                                <br>Gestion de projet : Mise en place d'un nouveau CRM, mise en place d'un outil groupe de calcul des risques LCB/FT.
-                                <br>Scrum master dans l'équipe agile client.
+                                Responsable d'applications Front Office & CRM (Projets, maintenance et évolutions) : projets, maintenance, évolution, support métier.
+                                <br><br>Accompagnement du PO dans la préparation et le cadrage des nouvelles initiatives/ EPICS en lui apportant mon expertise et ma connaissance du scope IT.
+                                <br>Conception technico-fonctionnel et support technique & fonctionnelle pour les développeurs dans le cadre de la maintenance, projets et évolutions.
+                                <br>Proposition de solutions d'architecture en collaboration avec les architectes.
+                                <br>Recette les nouvelles fonctionnalités développées par l’équipe et accompagnement du PO ou métier dans leur recette.
+                                <br>Garant de la qualité des mises en production.
+                                <br>Valide les communications (release note) à destination des métiers lors de la mise en service de nouvelles fonctionnalités.
+                                <br><br>Garant du RUN sur mon périmètre applicatif (7 applications).
+                                <br>S'assurer que l’équipe de développement respecte les SLA de résolution d’incident.Escalade/alerte en cas d’incident majeur ou transverse.
+                                <br>Je contribue et m’assure que l’ensemble des activités/ procédures liées au cycle de vie d’une application soient bien réalisées (CRA, Security Check…).
+                                <br><br>Pilotage et suivi des ressources externes de mon périmètre (TMA : développeur, éditeur de logiciel).
+                                <br>Pilotage et suivi des développeurs : évaluation et validation des entrée/sortie.
+                                <br><br>Présente l’avancement global sur mon périmètre lors des comités métiers (mensuellement).
+                                <br>Participation à la gouvernance et suivi des partenaires afin d’apporter ma vision opérationnelle et remonter les principaux écueils.
+                                <br>Je fournis les informations nécessaires dans le cadre d’audit de conformité.
+                                <br><br>Responsable de domaine leader au sein de la team agile.
+
+
                             </p>
                         </div>
                     </div>
-                 <!-- end experience section-->
                 </div>
             </section>
+            <!-- end experience section-->
+
+            <!-- start compétences section-->
             <section class="container-fluid" id="Competences">
                 <div class="title-section"><span>C</span>ompétences</div>
                 <div class="row mt-5">
@@ -162,7 +177,7 @@
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <h6>Javascript</h6>
+                                <h6>Javascript, Solidity, Web3</h6>
                             </div>
                             <div class="col-6">
                                 <div class="progress">
@@ -172,7 +187,7 @@
                         </div>
                         <div class="row">
                             <div class="col-4">
-                                <h6>HTML, CSS, Bootstrap</h6>
+                                <h6>HTML, CSS, Bootstrap, ReactJS</h6>
                             </div>
                             <div class="col-6">
                                 <div class="progress">
@@ -249,20 +264,23 @@
                     </div>
                 </div>
             </section>
+            <!-- end compétences section-->
+
+            <!-- start langues section-->
             <section class="container-fluid" id="Langues">
                 <div class="title-section"><span>L</span>angues</div>
                 <div class="row mt-5 justify-content-evenly">
-                    <div class="col-2">
+                    <div class="col-2" id="Anglais">
                         <div class="card shadow overflow-hidden" style="width: 18rem; height: 27rem;">
                             <img src="./images/speak-english-accent-anglais-tuc.jpg" class="card-img-top" alt="image langue anglais">
                             <div class="card-body">
                                 <h5 class="card-title text-center">Anglais</h5>
-                                <p class="card-text">Que ce soit dans mon poste actuel ou précédemment à la COFACE, je pratique l'anglais au quotidien aussi bien à l'écrit qu'à l'orale dans le cadre de mes projets.</p>
+                                <p class="card-text">Que ce soit dans mon poste actuel ou précédemment à la COFACE, je pratique l'anglais au quotidien aussi bien à l'écrit qu'à l'orale dans le cadre de mon activité.</p>
                                 <p class="card-footer">Très bon niveau</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-2">
+                    <div class="col-2" id="Espagnol">
                         <div class="card shadow overflow-hidden" style="width: 18rem; height: 27rem;">
                             <img src="./images/espagnol.jpg" class="card-img-top" alt="image langue espagnol">
                             <div class="card-body">
@@ -279,20 +297,28 @@
                     <div class="row " style="margin-top: 80px;">
                         <div class="col-3" id="text-formation-conteneur">
                             <div class="row">
-                                <div class="col-4" style="height: 75%; border-right: 1px solid black;">
+                                <div class="col-4" style="height: 90%; border-right: 1px solid black;">
                                     <h5>2007 - 2010</h5>
                                     <h5>2010 - 2013</h5>
                                     <h5>2011 - 2013</h5>
+                                    <h5>2021 - 2022</h5>
                                 </div>
                                 <div class="col-8">
-                                    <h5 style="position: relative; bottom:10px;">Classe prépatoire
+                                    <h5 style="position: relative; bottom:10px;"><img src="./images/Lycée_militaire.jpg" alt="logo_lycée_militaire"/>
+                                        Classe prépatoire
                                         <p>Classe préparatoire au lycée militaire d’Aix-en-provence,<br> filière MPSI/MP.</p>
                                     </h5>
-                                    <h5 style="position: relative; bottom:40px;">Diplôme d'ingénieur (ENSICAEN)
+                                    <h5 style="position: relative; bottom:60px;"><img src="./images/Ensicaen_logo.jpg" alt="logo_Ensicaen" />
+                                        Diplôme d'ingénieur (ENSICAEN)
                                         <p>Ecole nationale supérieure d’ingénieur de Caen – Diplome d’ingénieur en informatique</p>
                                     </h5>
-                                    <h5 style="position: relative; bottom:75px;">Master 2 E-Secure (UNICAEN)
+                                    <h5 style="position: relative; bottom:105px;"><img src="./images/Unicaen_logo.jpg" alt="logo_Unicaen"/>
+                                        Master 2 E-Secure (UNICAEN)
                                         <p>Université Caen Normandie – Master 2 E-Secure,<br> sécurité des systemes informatiques</p>
+                                    </h5>
+                                    <h5 style="position: relative; bottom:150px;"><img src="./images/Alyra_logo.jpg" alt="logo_alyra"/>
+                                        Certifié développeur blockchain
+                                        <p>Alyra - l'école blockchain,<br> certifié développeur blockchain sur ethereum</p>
                                     </h5>
                                 </div>
                             </div>
@@ -308,12 +334,13 @@
                 <section class="container-fluid" id="Contactez-moi">
                     <div class="title-section"><span>C</span>ontactez-moi</div>
                     <div class="container">
-                        <h2 class="mb-0">Un projet de création web ?</h2>
-                        <h3 class="fw-light fs-5">Allons en discuter autour d'un café</h3>
+                        <h2 class="mb-0">Intéressé par mon profil ? </h2>
+                        <br>
+                        <h2 class="fs-5">Laissez-moi un message</h2>
                 
                         <div class="row gy-4 mt-4">
                           <div class="col-12 col-md-5">
-                            <img src="./images/rm373batch13-081.jpg" alt="Image d'une tasse de café" width="100%" class="rounded-3 shadow">
+                            <img src="./images/Image_section_contactez_moi.jpg" alt="image_contactez_moi" width="100%" class="rounded-3 shadow">
                           </div>
                           <div class="col-12 offset-md-1 col-md-6">
                 
@@ -328,7 +355,7 @@
                                 <input name="name" type="text" class="form-control" id="name">
                               </div>
                               <div class="col-12 my-2">
-                                <label for="email" class="form-label">Email address</label>
+                                <label for="email" class="form-label">Email</label>
                                 <input name="email" type="email" class="form-control" id="email">
                               </div>
                               <div class="col-12 my-2">
@@ -339,12 +366,13 @@
                                 <button type="submit" class="btn btn-primary w-100">Envoyer</button>
                               </div>
                             </form>
-                
                           </div>
                         </div>
                       </div>
                 </section>
         </div>
+        <!-- end langues section-->
+
         <footer></footer>
         <script async type="text/javascript">
            var lastPositionScroll = window.screenY;
@@ -360,25 +388,21 @@
                 //Activer border bottom sous l'ancre quand on est dans la div référencé dans href
                 var activeNavLink = document.getElementsByClassName("nav-link");
                 var section = document.getElementsByTagName("section");
-                var header = document.getElementsByTagName("header");
                 
                 for(i=0; i < section.length; i++){
-                    if(((window.scrollY > section[i].offsetTop) && (window.scrollY < (section[i].scrollHeight + section[i].offsetTop)))){
-                        for(j=0; j < activeNavLink.length;j++){               
+                    if( (window.scrollY > section[i].offsetTop) && (window.scrollY < (section[i].scrollHeight + section[i].offsetTop) )){
+                        for(j=0; j < activeNavLink.length;j++){    
                             if(activeNavLink[j].hash == "#"+section[i].id){
-                                if(j != 0){
-                                    activeNavLink[j].style.borderBottom = "1px solid rgb(13, 110, 253)";
-                                    activeNavLink[j+1].style.borderBottom = "";
-                                    activeNavLink[j-1].style.borderBottom = "";
-                                }
+                                activeNavLink[j].style.borderBottom = "1px solid rgb(13, 110, 253)";
                             }
+                            else activeNavLink[j].style.borderBottom = "";
                         }    
-                    }else if( (window.scrollY > header[0].offsetTop) && (window.scrollY < (header[0].scrollHeight + header[0].offsetTop)) ){
-                        activeNavLink[0].style.borderBottom = "1px solid rgb(13, 110, 253)";
-                        activeNavLink[1].style.borderBottom = "";
                     }
+
                 }
            });
+
+           window.addEventListener("")
 
            //Activer border bottom sous l'ancre sur laquelle l'utiliseteur a cliqué 
            var activeNavLink = document.getElementsByClassName("nav-link")[0];

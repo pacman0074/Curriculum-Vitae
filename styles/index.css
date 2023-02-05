@@ -8,6 +8,7 @@ section
     border:2px solid red;
 }*/
 
+
 @font-face {
     font-family: "AlexBrush-Regular";
     src: url("../font/AlexBrush-Regular.ttf");
@@ -123,9 +124,18 @@ h1 span > span
     overflow: hidden;
 }
 
-section{
-    margin-top: 7em;
-}
+/*section:last-child::after
+{
+    content: "";
+    border-top: 1px solid black;
+    width: 100px;
+    position:absolute;
+    bottom: 100px;
+
+
+}*/
+
+
 
 .title-section span 
 {
@@ -179,7 +189,7 @@ section{
     transition: transform 1s;
 }
 
-#Langues img:hover
+#Anglais:hover img, #Espagnol:hover img
 {
     /* L'image est grossie de 25% */
     -webkit-transform:scale(1.25); /* Safari et Chrome */
@@ -196,7 +206,7 @@ section{
 
 #Formations div:last-child
 {
-    height: 500px;
+    height: 650px;
 }
 
 #text-formation-conteneur
@@ -224,7 +234,14 @@ section{
 {
     margin-bottom: 100px;
     
- 
+}
+
+#text-formation-conteneur h5 img
+{
+    height: 2em;
+    width: 2em;
+    position: relative;
+    right : 0.5em;
 }
 
 #text-formation-conteneur p
