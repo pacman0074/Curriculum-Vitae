@@ -59,7 +59,7 @@ header
 #telecharger
 {
     position:relative;
-    
+    /*right : 50px;*/
     border: 1px solid black;
   
 }
