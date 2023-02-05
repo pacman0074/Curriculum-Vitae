@@ -58,7 +58,7 @@ header
 
 #telecharger
 {
-    position:relative;
+    /*position:relative;*/
     /*right : 50px;*/
     border: 1px solid black;
   
@@ -79,7 +79,7 @@ header
 .nav-link 
 {
     color: black;
-    font-size:medium;
+    /*font-size:medium;*/
 }
 
 /*.nav-link:hover
