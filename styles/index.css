@@ -43,14 +43,15 @@ body
     background-image: url("../images/background-body-5-bis.png");
     background-attachment:fixed;
     background-size:cover;
+    overflow-x: hidden;
 }
 
 
 header
 {
     
-    position:absolute;
-    top: 0;
+    
+
     z-index: 5;
     background-color: white;
     background-attachment:fixed;
