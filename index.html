@@ -10,7 +10,7 @@
         <title>Portfolio</title>
     </head>
     <body>
-        <header class="container-fluid d-flex flex-row justify-content-between shadow mb-5 p-4" >
+        <header class="container-fluid d-flex flex-row justify-content-between shadow p-4" >
             <div id="initiale"><span class="bg-primary bg-gradient p-1 rounded-3 text-light">Yannis</span> AYOUAZ</div>
             <ul class="nav">
                 <li class="nav-item">
@@ -46,9 +46,7 @@
                     <h2>Bienvenue sur mon portfolio</h2>
                 </div>
                 <div class="col-4">
-                    <figure class="h-75 w-75">
-                        <img class="img-fluid" src="./images/Photo_portrait.png" alt="Photo de présentation"/>
-                    </figure>
+                    <img class="img-fluid" src="./images/Photo_portrait.png" alt="Photo de présentation"/>
                 </div>
             </section>
             <!-- end accueil section-->
@@ -161,7 +159,7 @@
             <!-- start compétences section-->
             <section class="container-fluid" id="Competences">
                 <div class="title-section"><span>C</span>ompétences</div>
-                <div class="row mt-5">
+                <div class="row">
                     <div class="col-4">
                         <h4>Développement</h4>
                         <div class="row">
@@ -269,7 +267,7 @@
             <section class="container-fluid" id="Langues">
                 <div class="title-section"><span>L</span>angues</div>
                 <div class="row mt-5 justify-content-evenly">
-                    <div class="col-sm-2" id="Anglais">
+                    <div class="col-sm-2 mb-3" id="Anglais">
                         <div class="card shadow overflow-hidden" style="width: 18rem; height: 27rem;">
                             <img src="./images/speak-english-accent-anglais-tuc.jpg" class="card-img-top" alt="image langue anglais">
                             <div class="card-body">
@@ -384,17 +382,27 @@
            var lastPositionScroll = window.screenY;
 
             window.addEventListener("scroll", function(event){ 
+                var activeNavLink = document.getElementsByClassName("nav-link");
+                var section = document.getElementsByTagName("section");
+
                 //Cacher le header quand scroll down
                 if (event.currentTarget.scrollY >= lastPositionScroll){ 
-                    document.getElementsByTagName("header")[0].style.visibility = "hidden";     
-                } else document.getElementsByTagName("header")[0].style.visibility = "visible";
+                    window.document.getElementsByTagName("header")[0].style.visibility = "hidden"; 
+
+                } else {
+                    if(window.scrollY >= section[1].offsetTop) {
+                        window.document.getElementsByTagName("header")[0].style.position = "fixed";
+                        window.document.getElementsByTagName("header")[0].style.top = 0;
+
+                    } else window.document.getElementsByTagName("header")[0].style.position = "relative";
+
+                    window.document.getElementsByTagName("header")[0].style.visibility = "visible";
+                } 
 
                 lastPositionScroll = event.currentTarget.scrollY;
 
+
                 //Activer border bottom sous l'ancre quand on est dans la div référencé dans href
-                var activeNavLink = document.getElementsByClassName("nav-link");
-                var section = document.getElementsByTagName("section");
-                
                 for(i=0; i < section.length; i++){
                     if( (window.scrollY > section[i].offsetTop) && (window.scrollY < (section[i].scrollHeight + section[i].offsetTop) )){
                         for(j=0; j < activeNavLink.length;j++){    
@@ -407,8 +415,6 @@
 
                 }
            });
-
-           window.addEventListener("")
 
            //Activer border bottom sous l'ancre sur laquelle l'utiliseteur a cliqué 
            var activeNavLink = document.getElementsByClassName("nav-link")[0];

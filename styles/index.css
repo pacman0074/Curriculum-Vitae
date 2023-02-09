@@ -49,15 +49,12 @@ body
 
 header
 {
-    
-    
-
     z-index: 5;
     background-color: white;
     background-attachment:fixed;
     background-size:cover;
+    position:relative;
 
-   
 }
 
 #telecharger
@@ -117,14 +114,11 @@ h1 span > span
     color: rgb(13, 110, 253);
 }
 
-#Accueil figure 
+#Accueil img 
 {   /* offset-x | offset-y | blur-radius | color */
     box-shadow: 0.5em 0.5em 0.5em gainsboro;
-    position :relative;
-    top: 40px;
-    left: 80px;
     border-radius: 30px;
-    overflow: hidden;
+
 }
 
 /*section:last-child::after
@@ -176,11 +170,6 @@ h1 span > span
     margin-bottom: 1.5em;
 }
 
-.card-body
-{
-    position: relative;
-    background-color: white;
-}
 
 #Langues
 {
@@ -191,6 +180,7 @@ h1 span > span
 {
     transition: transform 1s;
 }
+
 
 #Anglais:hover img, #Espagnol:hover img
 {
