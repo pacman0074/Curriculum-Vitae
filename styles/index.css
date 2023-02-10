@@ -213,7 +213,7 @@ h1 span > span
     border: 5px solid white;
     position: relative;
     z-index: 2;
-    top: 100px;
+    top: 50px;
     left: 24%;
     text-align: center;
     
@@ -257,7 +257,7 @@ h1 span > span
     border: 1px solid black;
     width: 4%;
     position: relative;
-    top:120px;
+    top: 70px;
     z-index: 3;
     left: 22%;
 
