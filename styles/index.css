@@ -143,7 +143,7 @@ h1 span > span
 .title-section
 {
     text-align: center;
-    margin-bottom: 0.3em;
+    margin-bottom: 10%;
     font-family:"AlexBrush-Regular";
     font-size: 5em;
 }
@@ -176,6 +176,11 @@ h1 span > span
     margin-top: 300px;
 }
 
+#Formations
+{
+    margin-top: 300px;
+}
+
 #Langues img
 {
     transition: transform 1s;
@@ -192,15 +197,13 @@ h1 span > span
     transform:scale(1.25);
 }
 
-#Formations
+#Formations img
 {
-    padding-bottom: 50px;
+    position:absolute;
+    width: 80%;
+    right:7%;
 }
 
-#Formations div:last-child
-{
-    height: 650px;
-}
 
 #text-formation-conteneur
 {
@@ -209,25 +212,22 @@ h1 span > span
     position: relative;
     z-index: 2;
     top: 180px;
-    left: 300px;
-    width: 40%;
+    left: 5%;
     text-align: center;
+    
     
    
 }
 
 #text-formation-conteneur div
 {
-    padding-top: 50px;
+    padding-top: 5%;
+    padding-bottom: 1%;
     
  
 }
 
-#text-formation-conteneur h5
-{
-    margin-bottom: 100px;
-    
-}
+
 
 #text-formation-conteneur h5 img
 {
@@ -237,6 +237,8 @@ h1 span > span
     right : 0.5em;
 }
 
+
+
 #text-formation-conteneur p
 {
      font-size:0.7em;
@@ -245,30 +247,21 @@ h1 span > span
 }
 
 
+
+
 #barre
 {
     /*background-color: rgb(13, 110, 253);*/
     background-color:rgb(255, 84, 83);
     border: 1px solid black;
-    height:95%;
-    width: 70px;
+    width: 4%;
     position: relative;
     top:230px;
     z-index: 3;
-    left: 270px;
+    left: 3%;
 
 }
 
-#Formations {
-   margin-top: 300px;
-}
-
-#Formations figure
-{
-    position: relative;
-    z-index: 1;
-    left: 100px;
-}
 
 #Contactez-moi
 {
